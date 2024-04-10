@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>MiageGPT with Dall-E</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <!--
+        <script src="js/testRequestDavinCi.js"></script>
+        -->
+    <script type="module" src="js/sendRequestToServer.js"></script>
+
+</head>
+
+<body>
+    <section class="side-bar">
+        <button>New chat</button>
+        <div class="history"></div>
+        <nav>
+            <p>Made by Michel B.</p>
+        </nav>
+    </section>
+    <section class="main">
+        <h1>MiageGPT</h1>
+        <!-- Conteneur pour afficher les interactions prompt-réponse -->
+        <div id="inputChat" class="chat-container"></div>
+        <div id="imageOutput" class="image-output-container"></div> <!-- Nouveau conteneur pour les images -->
+        <!-- Le conteneur 'output' semble être redondant ici, à moins qu'il soit utilisé pour autre chose -->
+        <!-- <div id="output"></div> -->
+        <div class="bottom-section">
+            <div class="input-container">
+                <!-- Ajoutez un 'id' à votre input pour le sélectionner facilement en JS -->
+                <input id="userInput" type="text" placeholder="Tapez votre message ici...">
+                <!-- Assurez-vous que 'submit' est un bouton pour permettre la soumission avec Enter -->
+                <button id="submit">➢</button>
+            </div>
+        </div>
+        <p class="info">Miage GPT Apr 27 version, un essai pour un TP avec les M1 Miage...</p>
+    </section>
+    
+
+</body>
+
+</html>
