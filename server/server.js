@@ -4,6 +4,8 @@ import { API_KEY } from './config.js';
 import OpenAI from "openai";
 // handle form data posted
 import multer from 'multer';
+import { readChatHistory, addToChatHistory } from './chatHistory.js';
+
 
 
 // create an instance of OpenAI with the api key
@@ -47,9 +49,12 @@ app.post('/chat', upload.none(), async (req, res) => {
         frequency_penalty: 0,
         presence_penalty: 0,
       });
+    const chatResponse = response.choices[0].message.content;
 
-      // send the response as json
-        res.json(response);
+    // Enregistrez chaque interaction dans l'historique
+    await addToChatHistory({ prompt, chatResponse });
+
+    res.json(response);
 });
 
 app.post('/image', upload.none(), async (req, res) => {

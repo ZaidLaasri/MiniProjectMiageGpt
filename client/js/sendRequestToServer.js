@@ -33,7 +33,7 @@ async function getResponseFromServer() {
     titre.style.display='none';
     const loaderModal = document.querySelector('#loaderModal');
     // Affichez la modale
-    loaderModal.style.display = 'block';
+    loaderModal.style.display = 'flex';
     const prompt = inputElement.value.trim().toLowerCase();
 try{
     if (prompt.startsWith('/image')) {
