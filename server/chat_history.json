@@ -1,10 +1,62 @@
 [
   {
-    "prompt": "ça va",
-    "chatResponse": "Oui, ça va bien merci. Et vous ?"
+    "conversationID": "1468bf2e-eb5f-4e38-a730-b79ef07a4ef7",
+    "chats": [
+      {
+        "prompt": "je teste",
+        "chatResponse": "Bonjour! Que puis-je faire pour vous aider aujourd'hui?"
+      },
+      {
+        "prompt": "je teste encore",
+        "chatResponse": "D'accord, n'hésitez pas à poser vos questions ou à me demander de l'aide si vous en avez besoin. Je suis là pour vous aider !"
+      },
+      {
+        "prompt": "tajine encore",
+        "imageResponse": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-SaK9P3bNrttJbBOx6qeg3dOA/user-XPgzah8YnfArL0bi3nAfjxAi/img-s1T1JXTxKOX1vGTt9Y3zi97d.png?st=2024-06-12T10%3A29%3A52Z&se=2024-06-12T12%3A29%3A52Z&sp=r&sv=2023-11-03&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-06-11T19%3A09%3A22Z&ske=2024-06-12T19%3A09%3A22Z&sks=b&skv=2023-11-03&sig=MHY1Y5VbWu6c6sBEBV7OeJ0hvVvnjKO3BMR3aby8vvU%3D"
+      },
+      {
+        "prompt": "je veux aller à la plage",
+        "chatResponse": "C'est une excellente idée ! La plage est un endroit idéal pour se détendre, profiter du soleil et de l'air marin. N'oubliez pas d'apporter votre crème solaire, une serviette, de l'eau et peut-être un bon livre. Passez une journée merveilleuse à la plage !"
+      },
+      {
+        "prompt": "et je vais jouer au foot",
+        "chatResponse": "C'est super ! Le foot est un excellent sport pour se dépenser et s'amuser en même temps. Tu joues dans une équipe ou juste pour le plaisir ?"
+      },
+      {
+        "prompt": "real madrid",
+        "imageResponse": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-SaK9P3bNrttJbBOx6qeg3dOA/user-XPgzah8YnfArL0bi3nAfjxAi/img-GZS6XllYur50tqPHOqpMoyb2.png?st=2024-06-12T12%3A51%3A34Z&se=2024-06-12T14%3A51%3A34Z&sp=r&sv=2023-11-03&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-06-11T22%3A52%3A12Z&ske=2024-06-12T22%3A52%3A12Z&sks=b&skv=2023-11-03&sig=CEe27eDjKL9QtDbp8XN1mcsTgamaFat0uKZldxfj39A%3D"
+      }
+    ]
   },
   {
-    "prompt": "ça va",
-    "chatResponse": "Oui, merci ! Et vous, comment ça va ?"
+    "conversationID": "50d295ca-8124-468c-9d02-414e7b7df99e",
+    "chats": [
+      {
+        "prompt": "salut ça va ?",
+        "chatResponse": "Bonjour! Je suis un assistant virtuel et je n'ai pas de sentiments, mais je suis là pour vous aider. Que puis-je faire pour vous aujourd'hui?"
+      },
+      {
+        "prompt": "salut est-ce que tu peux me donner la recette du tajine marocain s'il te plaît",
+        "chatResponse": "Bien sûr, voici la recette du tajine marocain classique :\n\nIngrédients :\n- 1 kg de viande d'agneau ou de poulet coupée en morceaux\n- 2 oignons hachés\n- 2 gousses d'ail hachées\n- 2 cuillères à café de ras el hanout\n- 1 cuillère à café de curcuma\n- 1 cuill"
+      }
+    ]
+  },
+  {
+    "conversationID": "3367ad70-93ef-4c1e-8f39-5b9a1b661038",
+    "chats": [
+      {
+        "prompt": "salut on est mercredi",
+        "chatResponse": "Salut! Comment ça va? Tu as prévu quelque chose de sympa pour ce mercredi?"
+      }
+    ]
+  },
+  {
+    "conversationID": "69891bf6-3242-49a7-8256-89ae299f3f8d",
+    "chats": [
+      {
+        "prompt": "propose moi une app python",
+        "chatResponse": "Une application Python que je pourrais te proposer est une application de suivi de budget. Cette application permettrait aux utilisateurs de saisir leurs dépenses et leurs revenus, et de visualiser facilement leurs dépenses mensuelles et leurs économies. Elle pourrait également inclure des fonctionnalités telles que la création de catégories de dépenses, des graphiques pour visualiser les tendances de dépenses, et des rappels pour les factures à payer."
+      }
+    ]
   }
 ]

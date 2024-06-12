@@ -8,6 +8,8 @@
         <script src="js/testRequestDavinCi.js"></script>
         -->
     <script type="module" src="js/sendRequestToServer.js"></script>
+    <!-- Bootstrap CSS -->
+
 
 </head>
 
@@ -20,31 +22,78 @@
         </nav>
     </section>
     <section class="main">
-        <h1 class="titre">MiageGPT</h1>
-        <!-- Modale Loader -->
-        <div id="loaderModal" class="modal">
-            <div class="modal-content">
-                <div class="loader"></div>
+        <div class="chatResponse">
+            <h1 class="titre">MiageGPT</h1>
+            <!-- Modale Loader -->
+            <div id="loaderModal" class="modal">
+                <div class="modal-content">
+                    <div class="loader"></div>
+                </div>
             </div>
+            <!-- Conteneur pour afficher les interactions prompt-réponse -->
+            <div id="inputChat" class="chat-container"></div>
+            <div id="imageOutput" class="image-output-container"></div>
         </div>
-        <!-- Conteneur pour afficher les interactions prompt-réponse -->
-        <div id="inputChat" class="chat-container"></div>
-        <div id="imageOutput" class="image-output-container"></div> <!-- Nouveau conteneur pour les images -->
-        <!-- Le conteneur 'output' semble être redondant ici, à moins qu'il soit utilisé pour autre chose -->
-        <!-- <div id="output"></div> -->
         <div class="spacer"></div>
         <div class="bottom-section">
-            <div class="input-container">
-                <!-- Ajoutez un 'id' à votre input pour le sélectionner facilement en JS -->
-                <input id="userInput" type="text" placeholder="Tapez votre message ici...">
-                <!-- Assurez-vous que 'submit' est un bouton pour permettre la soumission avec Enter -->
-                <button id="submit" class="margin-right-neg">➢</button>
+            <div id="imageOptions" class="container" style="display: none;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="imageType">Type d'image</label>
+                        <select id="imageType" class="form-select" style="background-color: black;">
+                            <option value="">Select Type</option>
+                            <option value="realistic photo">Realistic Photo</option>
+                            <option value="surreal painting">Surreal Painting</option>
+                            <option value="vintage poster">Vintage Poster</option>
+                            <option value="futuristic concept art">Futuristic Concept Art</option>
+                            <option value="abstract art">Abstract Art</option>
+                            <option value="digital illustration">Digital Illustration</option>
+                            <option value="watercolor painting">Watercolor Painting</option>
+                            <option value="minimalist design">Minimalist Design</option>
+                            <option value="pop art">Pop Art</option>
+                            <option value="retro comic book style">Retro Comic Book Style</option>
+                            <option value="steampunk artwork">Steampunk Artwork</option>
+                            <option value="cyberpunk cityscape">Cyberpunk Cityscape</option>
+                            <option value="fantasy landscape">Fantasy Landscape</option>
+                            <option value="pixel art">Pixel Art</option>
+                            <option value="black and white sketch">Black and White Sketch</option>
+                            <option value="oil painting">Oil Painting</option>
+                            <option value="sci-fi environment">Sci-Fi Environment</option>
+                            <option value="gothic horror">Gothic Horror</option>
+                            <option value="anime style">Anime Style</option>
+                            <option value="manga style">Manga Style</option>
+                            <option value="low-poly 3D render">Low-Poly 3D Render</option>
+                            <option value="photorealistic render">Photorealistic Render</option>
+                            <option value="street art graffiti">Street Art Graffiti</option>
+                            <option value="impressionist painting">Impressionist Painting</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="timeOfDay">Période de la journée</label>
+                        <select id="timeOfDay" class="form-select" style="background-color: black;">
+                            <option value="">Select Time of Day</option>
+                            <option value="morning">Morning</option>
+                            <option value="afternoon">Afternoon</option>
+                            <option value="evening">Evening</option>
+                            <option value="night">Night</option>
+                        </select>
+                    </div>
+                </div>
             </div>
+            <div class="input-container">
+               
+                <input id="userInput" type="text" placeholder="Tapez votre message ici...">
+                <button id="submit" class="margin-right-neg" type="button">➢</button>
+            </div>
+            <div id="recordDiv" style="display: none;">
+                <button id="recordButton" onclick="">🎤 Record</button>
+            </div>
+            <audio id="audioPlayback" controls hidden></audio>
+            <p class="info">Miage GPT Apr 27 version, un essai pour un TP avec les M1 Miage...</p>
         </div>
-        <p class="info">Miage GPT Apr 27 version, un essai pour un TP avec les M1 Miage...</p>
     </section>
-
-
 </body>
+
+
 
 </html>
