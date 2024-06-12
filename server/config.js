@@ -8,3 +8,4 @@
 // set OPENAI_API_KEY="votre_clé_api"
 
 export const API_KEY = "";
+
