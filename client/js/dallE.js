@@ -1,9 +1,11 @@
 const endpointURL = 'http://localhost:3001/image';
 
-export async function getImageFromDallE(prompt) {
+export async function getImageFromDallE(prompt, conversationID) {
     // On envoie le contenu du prompt dans un FormData (eq. formulaires multipart)
     const promptData = new FormData();
     promptData.append('prompt', prompt);
+    promptData.append('conversationID', conversationID);
+
 
     // Envoi de la requête POST par fetch, avec le FormData dans la propriété body
     // côté serveur on récupèrera dans req.body.prompt la valeur du prompt,
@@ -16,6 +18,7 @@ export async function getImageFromDallE(prompt) {
         });
 
         const data = await response.json();
+        conversationID = data.conversationID;
         return data;
     } catch (error) {
         console.log(error);

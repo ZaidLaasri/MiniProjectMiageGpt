@@ -7,4 +7,4 @@
 // Sur windows:
 // set OPENAI_API_KEY="votre_clé_api"
 
-export const API_KEY = "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";
+export const API_KEY = "";
